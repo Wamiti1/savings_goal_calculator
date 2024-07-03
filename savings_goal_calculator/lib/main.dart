@@ -8,9 +8,10 @@ void main() {
     debugShowCheckedModeBanner: false,    
     theme: FlexThemeData.light(
     scheme: FlexScheme.hippieBlue,),
-    darkTheme: FlexThemeData.dark(scheme: FlexScheme.hippieBlue, darkIsTrueBlack: true),
-    home: const Input(),
-    
+    darkTheme: FlexThemeData.dark(
+      
+      scheme: FlexScheme.hippieBlue, darkIsTrueBlack: true),
+    home: const Input(),    
   ));
 }
 

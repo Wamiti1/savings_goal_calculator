@@ -28,14 +28,16 @@ class _InputState extends State<Input> {
         children:[Column(
           children: [
           SizedBox(
+            
             //For responsiveness on different screens
           height:MediaQuery.of(context).size.height*0.2, 
-          child :Image.asset('assets/money.png', scale: 3.0,)),
+          child :Image.asset('assets/money.png', scale: 3.0,
+          color: Theme.of(context).brightness == Brightness.light ? Colors.black : Colors.white,)),
           Text('E-Piggy Savings' ,style: Theme.of(context).textTheme.bodyLarge,),
           Text(
             'Starting : ${DateFormat('EEEE, dd.MM.y').format(now)} ${now.timeZoneName}',
-
             style: Theme.of(context).textTheme.bodyLarge,),
+         
           Form(
             child: Column(
               children: [

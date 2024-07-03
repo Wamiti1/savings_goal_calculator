@@ -38,7 +38,8 @@ return start.add(const Duration(days: 30));
         child: Column(
           children: [
             Text('Your current achievement : ${achieved().toStringAsFixed(0)}%'),
-            Text(' Remaining months to achieve goal : ${remaining().toStringAsFixed(0)} months'),
+            Text('Remaining months to achieve goal : ${remaining().toStringAsFixed(0)} months'),
+            Text('Current Savings : ${NumberFormat().format(current)}'),
             Text('Next installation on : ${DateFormat('EEEE, dd.MM.yy').format(next())}'),
             Text('Next installation on : ${next().difference(DateTime.now()).inHours.toString()} hours')
           ],),
